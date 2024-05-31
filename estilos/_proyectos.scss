@@ -1,0 +1,85 @@
+.proyectos{
+    width: 100%;
+    border: solid 25px $color1;
+    justify-content: center;
+}
+
+.proy{
+    border: solid 15px $color1;
+    align-content: center;
+    justify-content: center;
+    background-position: center;
+    
+    :hover{
+        transform: scale(1.02);
+        transition: 0.5s;
+    }
+}
+
+
+.imagen{
+    border: solid 10px $color1;
+    height: 450px;
+    min-height: 300px;
+    overflow: hidden;
+
+    :hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+}
+
+.imagen360{
+    padding: 10px;
+    //border: solid 10px white;
+    height: 450px;
+    overflow: hidden;
+    align-items: center;
+    :hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+}
+
+.carousel-item{
+    height: 450px;
+    justify-content: center;
+    align-content: center;
+}
+
+.imagen12{
+    border: solid 10px $color1;
+    justify-content: right;
+    overflow: hidden;
+    justify-items: center;
+    :hover{
+        transform: scale(1.3);
+        transition: 1s;
+    }
+}
+
+.softwares{
+    height: 100px;
+    padding: 5px;
+    margin: 50px;
+}
+
+.logo{
+    height: 100px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    :hover{
+        transform: scale(1.2);
+        transition: .5s;
+    }
+}
+
+
+.col-md{
+    height: 300px;
+}
+.col-sm{
+    height: 150px;
+}

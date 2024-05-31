@@ -1,0 +1,82 @@
+@mixin secciones ($bgcolor: $color3,){
+    margin: 0;
+    background-color: $bgcolor !important;
+    height: 75px;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    background-size: 300%;
+    background-position: bottom;
+    text-align: center;
+    color: $color1;
+}
+.secciones{
+    @include secciones($color3)
+}
+
+.secciones2{
+    margin: 0;
+    background-color: $color1 !important;
+    height: 75px;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    background-position: bottom;
+    text-align: center;
+    color: $color4;
+}
+
+.titulos{
+    margin: 0;
+    height: 75px;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    background-position: bottom;
+    text-align: center;
+    color: $color4;
+}
+
+$bg1:   rgb(200, 200, 200);
+$bg2:   rgb(250, 250, 250);
+$bg3:   rgb(190, 220, 235); 
+
+@mixin fondo ($pad:25px, $bg:$bg2, $hg:500px){
+    padding: $pad;
+    background-image: $bg;
+    min-height: $hg;
+    box-sizing: border-box;
+}
+
+.bg-deg-gris{
+    padding: 25px;
+    background-image: linear-gradient(to left, $bg1, $bg2, $bg2);
+    min-height: 50px;
+    color: $color4;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.bg-deg-azul{
+    padding: 25px;
+    background-image: linear-gradient(to left, $bg2, $bg3);
+    min-height: 50px;
+    box-sizing: border-box;
+    justify-items: center
+}
+
+.bg-blanco{
+@include fondo(50, $bg2, 250px)
+}
+
+.bg-osc{
+    @include fondo(0, linear-gradient(to left, $color3, $color4, $color3), 20px);
+    min-height: 50px;
+    box-sizing: border-box;
+}
+
+.blanco{
+    background-color: $color1;
+    min-height: 120px;
+    padding: 20px;
+}

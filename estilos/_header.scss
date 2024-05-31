@@ -1,0 +1,15 @@
+.navbar{
+    padding: 10px;
+}
+
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.backvideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}

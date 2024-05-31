@@ -1,0 +1,33 @@
+.logo{
+    display:flex;
+    align-items: center;
+    img{
+        height: 100px;
+        margin-right: 10px;
+    }
+}
+
+.footer{
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: $color3;
+    text-align: center;
+    color: $color1;
+    margin: 0;
+}
+.nombrefooter{
+    text-decoration: none;
+    color: white;
+    :hover{
+        transform: scale(1.05);
+        transition: .3s;
+    }
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
